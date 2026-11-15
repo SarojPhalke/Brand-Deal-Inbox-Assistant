@@ -1,0 +1,161 @@
+[
+  {
+    "id": "E-01",
+    "category": "deal_offer",
+    "deal": "D1",
+    "fee_inr": 120000,
+    "payment": "cash",
+    "flags": [],
+    "note": "Superseded by later emails. Fee is above the rate card of 1,10,000."
+  },
+  {
+    "id": "E-02",
+    "category": "deal_offer",
+    "deal": "D1",
+    "fee_inr": 100000,
+    "payment": "cash",
+    "flags": [
+      "below_rate"
+    ],
+    "next_step": "negotiate"
+  },
+  {
+    "id": "E-11",
+    "category": "deal_offer",
+    "deal": "D1",
+    "fee_inr": 100000,
+    "payment": "cash",
+    "flags": [
+      "below_rate",
+      "agency_unverified"
+    ],
+    "next_step": "negotiate",
+    "note": "Latest terms for D1. Verify agency authority before sharing GST details."
+  },
+  {
+    "id": "E-03",
+    "category": "scam_or_phishing",
+    "deal": "D2",
+    "flags": [
+      "pay_to_join",
+      "urgency_pressure"
+    ],
+    "next_step": "report"
+  },
+  {
+    "id": "E-04",
+    "category": "not_a_fit",
+    "deal": "D3",
+    "fee_inr": 100800,
+    "payment": "cash",
+    "flags": [
+      "exclusivity_conflict"
+    ],
+    "next_step": "decline"
+  },
+  {
+    "id": "E-05",
+    "category": "not_a_fit",
+    "deal": "D4",
+    "fee_inr": 300000,
+    "payment": "cash",
+    "flags": [
+      "content_rule_violation"
+    ],
+    "next_step": "decline"
+  },
+  {
+    "id": "E-06",
+    "category": "needs_more_info",
+    "deal": "D5",
+    "fee_inr": 25000,
+    "payment": "cash",
+    "flags": [
+      "below_rate",
+      "missing_details"
+    ],
+    "next_step": "ask_for_details",
+    "note": "Judgment call. Real small brand, but the offer is vague and underpaid."
+  },
+  {
+    "id": "E-07",
+    "category": "scam_or_phishing",
+    "deal": "D6",
+    "flags": [
+      "prompt_injection",
+      "request_for_personal_info"
+    ],
+    "next_step": "report"
+  },
+  {
+    "id": "E-08",
+    "category": "needs_more_info",
+    "deal": "D7",
+    "flags": [
+      "missing_details"
+    ],
+    "next_step": "ask_for_details"
+  },
+  {
+    "id": "E-09",
+    "category": "deal_offer",
+    "deal": "D8",
+    "payment": "gifting",
+    "flags": [
+      "gifting_only",
+      "below_rate"
+    ],
+    "next_step": "negotiate",
+    "note": "Judgment call. Gift worth 3,500 vs rate card value of 60,000. Could also be decline."
+  },
+  {
+    "id": "E-10",
+    "category": "deal_offer",
+    "deal": "D9",
+    "fee_inr": 67200,
+    "payment": "cash",
+    "flags": [
+      "unusual_usage_rights"
+    ],
+    "next_step": "negotiate"
+  },
+  {
+    "id": "E-12",
+    "category": "needs_more_info",
+    "deal": "D10",
+    "fee_inr": 45000,
+    "payment": "cash",
+    "flags": [
+      "impossible_deadline"
+    ],
+    "next_step": "ask_for_details",
+    "note": "Judgment call. Deadline of 1 Nov has passed, so ask if it is a typo or an extension."
+  },
+  {
+    "id": "E-13",
+    "category": "spam",
+    "deal": "D11",
+    "flags": [],
+    "next_step": "ignore"
+  },
+  {
+    "id": "E-14",
+    "category": "scam_or_phishing",
+    "deal": "D12",
+    "flags": [
+      "suspicious_link",
+      "urgency_pressure"
+    ],
+    "next_step": "report"
+  },
+  {
+    "id": "E-15",
+    "category": "needs_more_info",
+    "deal": "D13",
+    "flags": [
+      "missing_attachment",
+      "missing_details"
+    ],
+    "next_step": "ask_for_details"
+  }
+]
