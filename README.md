@@ -54,3 +54,15 @@ This section details the classification taxonomy, policy enforcement rules, and 
 - **E-09 (BrewBox)**: Classified as `deal_offer` (barter) with a recommendation to decline or counter with standard rates, because a ₹3,500 product gift is heavily disproportionate to ₹60,000 worth of requested deliverables (1 reel + 2 stories).
 - **E-12 (SnapMeal)**: Classified as `needs_more_info` because the ₹45,000 budget exceeds Riya's ₹40,000 rate card and an email received on 10 November citing a 1 November deadline is almost certainly a typographical error (e.g., intended for 1 December or post-Diwali) that should be clarified before forfeiting a viable paid deal.
 
+E-05 (a gambling app) also got above_rate and missing_details. It’s harmless, but a creator doesn’t care about the fee on a blocked deal. Later you can hide business flags when the category is not_a_fit.
+E-10’s flags (above_rate, unusual_usage_rights) are exactly the “good money, bad terms” story.
+
+
+
+
+Design choices a reviewer will ask about
+Scams are never merged. A phishing email that claims to be “Dew Lab” stays on its own, so it can’t contaminate or hijack a real deal (tested with a fake E-99).
+Links need brand names or a company domain to match. Free-email domains (gmail) and agency senders never link by domain, because they send for many brands.
+The fee and currency travel together. A later USD fee won’t get paired with an earlier INR label.
+sender_changed warns when a “same brand” email comes from a different domain and isn’t a declared agency. That’s the case an impersonator would exploit.
+Known limitation for the README: two separate campaigns from the same brand would merge into one deal. A “new campaign” detector is a next-week item.
