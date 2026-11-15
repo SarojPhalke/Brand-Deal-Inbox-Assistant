@@ -1,0 +1,697 @@
+[
+  {
+    "deal_id": "D1",
+    "brand": "Dew Lab",
+    "email_ids": [
+      "E-01",
+      "E-02",
+      "E-11"
+    ],
+    "latest_email_id": "E-11",
+    "superseded_ids": [
+      "E-01",
+      "E-02"
+    ],
+    "category": "deal_offer",
+    "next_step": "negotiate",
+    "language": "english",
+    "fee_inr": 100000.0,
+    "rate_card_inr": 110000.0,
+    "fee_display": "Rs 1,00,000",
+    "deliverables": [
+      {
+        "platform": "instagram",
+        "kind": "reel",
+        "count": 2
+      },
+      {
+        "platform": "instagram",
+        "kind": "story",
+        "count": 3
+      }
+    ],
+    "deadline": "2026-11-25",
+    "usage_rights": "3 months paid usage",
+    "payment_type": "cash",
+    "gift_value_inr": null,
+    "confidence": 0.9,
+    "flags": [
+      {
+        "code": "below_rate",
+        "severity": "warn",
+        "reason": "Offer Rs 1,00,000 is Rs 10,000 below your rate card (Rs 1,10,000)."
+      },
+      {
+        "code": "agency_unverified",
+        "severity": "warn",
+        "reason": "Written by Brightside Agency on behalf of the brand. Confirm with the brand before sharing details."
+      },
+      {
+        "code": "terms_worsened",
+        "severity": "warn",
+        "reason": "The brand cut its fee from Rs 1,20,000 to Rs 1,00,000 since the first offer."
+      }
+    ],
+    "term_changes": [
+      "E-02: fee cut from Rs 1,20,000 to Rs 1,00,000."
+    ],
+    "reply_points": [
+      "For this scope my rate is Rs 1,10,000, so I'd need the fee at that level.",
+      "Before I share any details, please confirm in writing that Dew Lab has authorised Brightside Agency to represent them."
+    ],
+    "draft_reply": "Hi Arjun,\n\nThanks for reaching out. I'm interested and would like to align on a few terms. For this scope my rate is Rs 1,10,000, so I'd need the fee at that level. Before I share any details, please confirm in writing that Dew Lab has authorised Brightside Agency to represent them.\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-11",
+      "category": "deal_offer",
+      "brand": "Dew Lab",
+      "contact_name": "Arjun",
+      "contact_email": "talent@brightside-agency.com",
+      "on_behalf_of": "Brightside Agency",
+      "reasoning": "Merged terms from E-01, E-02, E-11; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D2",
+    "brand": "Glowstar",
+    "email_ids": [
+      "E-03"
+    ],
+    "latest_email_id": "E-03",
+    "superseded_ids": [],
+    "category": "scam_or_phishing",
+    "next_step": "report",
+    "language": "english",
+    "fee_inr": null,
+    "rate_card_inr": null,
+    "fee_display": null,
+    "deliverables": [],
+    "deadline": null,
+    "usage_rights": null,
+    "payment_type": null,
+    "gift_value_inr": 20000.0,
+    "confidence": 1.0,
+    "flags": [
+      {
+        "code": "pay_to_join",
+        "severity": "block",
+        "reason": "Asks you to pay a fee to join or unlock a deal. You never pay to join."
+      },
+      {
+        "code": "urgency_pressure",
+        "severity": "warn",
+        "reason": "Uses artificial time pressure to rush you."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [],
+    "draft_reply": null,
+    "draft_source": null,
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-03",
+      "category": "scam_or_phishing",
+      "brand": "Glowstar",
+      "contact_name": null,
+      "contact_email": "ambassador@glowstar-official.co",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-03; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D3",
+    "brand": "Pixelon",
+    "email_ids": [
+      "E-04"
+    ],
+    "latest_email_id": "E-04",
+    "superseded_ids": [],
+    "category": "not_a_fit",
+    "next_step": "decline",
+    "language": "english",
+    "fee_inr": 100800.0,
+    "rate_card_inr": 60000.0,
+    "fee_display": "Rs 1,00,800",
+    "deliverables": [
+      {
+        "platform": "youtube",
+        "kind": "integration",
+        "count": 1
+      }
+    ],
+    "deadline": "2026-12-10",
+    "usage_rights": null,
+    "payment_type": "cash",
+    "gift_value_inr": null,
+    "confidence": 0.95,
+    "flags": [
+      {
+        "code": "exclusivity_conflict",
+        "severity": "block",
+        "reason": "Competes with your Nova Phones exclusivity (smartphones) until 2027-01-31."
+      },
+      {
+        "code": "above_rate",
+        "severity": "info",
+        "reason": "Offer Rs 1,00,800 is Rs 40,800 above your rate card (Rs 60,000)."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [
+      "I currently have an exclusivity commitment in the smartphones category until 2027-01-31, so I can't take this on."
+    ],
+    "draft_reply": "Hi Pixelon,\n\nThank you for thinking of me. I currently have an exclusivity commitment in the smartphones category until 2027-01-31, so I can't take this on.\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-04",
+      "category": "not_a_fit",
+      "brand": "Pixelon",
+      "contact_name": null,
+      "contact_email": "creators@pixelon.com",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-04; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D4",
+    "brand": "LuckyPlay11",
+    "email_ids": [
+      "E-05"
+    ],
+    "latest_email_id": "E-05",
+    "superseded_ids": [],
+    "category": "not_a_fit",
+    "next_step": "decline",
+    "language": "english",
+    "fee_inr": 300000.0,
+    "rate_card_inr": 140000.0,
+    "fee_display": "Rs 3,00,000",
+    "deliverables": [
+      {
+        "platform": "instagram",
+        "kind": "reel",
+        "count": 2
+      },
+      {
+        "platform": "youtube",
+        "kind": "integration",
+        "count": 1
+      }
+    ],
+    "deadline": null,
+    "usage_rights": null,
+    "payment_type": "cash",
+    "gift_value_inr": null,
+    "confidence": 1.0,
+    "flags": [
+      {
+        "code": "content_rule_violation",
+        "severity": "block",
+        "reason": "Mentions 'fantasy_sports', which breaks your content rules (gambling, betting, fantasy sports, crypto)."
+      },
+      {
+        "code": "above_rate",
+        "severity": "info",
+        "reason": "Offer Rs 3,00,000 is Rs 1,60,000 above your rate card (Rs 1,40,000)."
+      },
+      {
+        "code": "missing_details",
+        "severity": "info",
+        "reason": "Missing: timeline."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [
+      "I don't promote gambling, betting, fantasy-sports or crypto products, so I'll have to pass."
+    ],
+    "draft_reply": "Hi LuckyPlay11,\n\nThank you for thinking of me. I don't promote gambling, betting, fantasy-sports or crypto products, so I'll have to pass.\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-05",
+      "category": "not_a_fit",
+      "brand": "LuckyPlay11",
+      "contact_name": null,
+      "contact_email": "growth@luckyplay11.app",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-05; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D5",
+    "brand": "Chai & Co",
+    "email_ids": [
+      "E-06"
+    ],
+    "latest_email_id": "E-06",
+    "superseded_ids": [],
+    "category": "deal_offer",
+    "next_step": "negotiate",
+    "language": "hinglish",
+    "fee_inr": 25000.0,
+    "rate_card_inr": 40000.0,
+    "fee_display": "Rs 25,000",
+    "deliverables": [
+      {
+        "platform": "instagram",
+        "kind": "reel",
+        "count": 1
+      }
+    ],
+    "deadline": null,
+    "usage_rights": null,
+    "payment_type": "cash",
+    "gift_value_inr": null,
+    "confidence": 0.95,
+    "flags": [
+      {
+        "code": "below_rate",
+        "severity": "warn",
+        "reason": "Offer Rs 25,000 is Rs 15,000 below your rate card (Rs 40,000)."
+      },
+      {
+        "code": "free_email_domain",
+        "severity": "info",
+        "reason": "Sent from a free email address, not a company domain. Verify the brand."
+      },
+      {
+        "code": "missing_details",
+        "severity": "info",
+        "reason": "Missing: timeline."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [
+      "For this scope my rate is Rs 40,000, so I'd need the fee at that level."
+    ],
+    "draft_reply": "Hi Chai & Co,\n\nThanks for reaching out. I'm interested and would like to align on a few terms. For this scope my rate is Rs 40,000, so I'd need the fee at that level.\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-06",
+      "category": "deal_offer",
+      "brand": "Chai & Co",
+      "contact_name": null,
+      "contact_email": "chai.and.co@gmail.com",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-06; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D6",
+    "brand": null,
+    "email_ids": [
+      "E-07"
+    ],
+    "latest_email_id": "E-07",
+    "superseded_ids": [],
+    "category": "scam_or_phishing",
+    "next_step": "report",
+    "language": "english",
+    "fee_inr": null,
+    "rate_card_inr": null,
+    "fee_display": null,
+    "deliverables": [],
+    "deadline": null,
+    "usage_rights": null,
+    "payment_type": null,
+    "gift_value_inr": null,
+    "confidence": 1.0,
+    "flags": [
+      {
+        "code": "prompt_injection",
+        "severity": "block",
+        "reason": "The email contains instructions aimed at an AI assistant. Treated as an attack, not a deal."
+      },
+      {
+        "code": "personal_info_request",
+        "severity": "warn",
+        "reason": "Asks for sensitive personal details ('phone number')."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [],
+    "draft_reply": null,
+    "draft_source": null,
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-07",
+      "category": "scam_or_phishing",
+      "brand": null,
+      "contact_name": null,
+      "contact_email": "deals@quickcash-media.biz",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-07; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D7",
+    "brand": "Urban Thread",
+    "email_ids": [
+      "E-08"
+    ],
+    "latest_email_id": "E-08",
+    "superseded_ids": [],
+    "category": "needs_more_info",
+    "next_step": "ask_for_details",
+    "language": "english",
+    "fee_inr": null,
+    "rate_card_inr": null,
+    "fee_display": null,
+    "deliverables": [],
+    "deadline": null,
+    "usage_rights": null,
+    "payment_type": null,
+    "gift_value_inr": null,
+    "confidence": 0.9,
+    "flags": [
+      {
+        "code": "missing_details",
+        "severity": "warn",
+        "reason": "Missing: deliverables, compensation, timeline."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [
+      "Could you share the deliverables you need (platform and number of posts), your budget, the timeline or go-live date and the usage rights you need?"
+    ],
+    "draft_reply": "Hi Urban Thread,\n\nThanks for reaching out. Could you share the deliverables you need (platform and number of posts), your budget, the timeline or go-live date and the usage rights you need?\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-08",
+      "category": "needs_more_info",
+      "brand": "Urban Thread",
+      "contact_name": null,
+      "contact_email": "hello@urbanthread.in",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-08; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D8",
+    "brand": "BrewBox",
+    "email_ids": [
+      "E-09"
+    ],
+    "latest_email_id": "E-09",
+    "superseded_ids": [],
+    "category": "deal_offer",
+    "next_step": "negotiate",
+    "language": "english",
+    "fee_inr": null,
+    "rate_card_inr": 60000.0,
+    "fee_display": null,
+    "deliverables": [
+      {
+        "platform": "instagram",
+        "kind": "reel",
+        "count": 1
+      },
+      {
+        "platform": "instagram",
+        "kind": "story",
+        "count": 2
+      }
+    ],
+    "deadline": "2026-11-22",
+    "usage_rights": null,
+    "payment_type": "gifting",
+    "gift_value_inr": 3500.0,
+    "confidence": 1.0,
+    "flags": [
+      {
+        "code": "gifting_only",
+        "severity": "warn",
+        "reason": "Payment is in products only, no cash."
+      },
+      {
+        "code": "below_rate",
+        "severity": "warn",
+        "reason": "Offer Rs 3,500 is Rs 56,500 below your rate card (Rs 60,000)."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [
+      "I don't take product-only deals for this scope; my rate is Rs 60,000, and I'm happy to discuss a paid fee."
+    ],
+    "draft_reply": "Hi BrewBox,\n\nThanks for reaching out. I'm interested and would like to align on a few terms. I don't take product-only deals for this scope; my rate is Rs 60,000, and I'm happy to discuss a paid fee.\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-09",
+      "category": "deal_offer",
+      "brand": "BrewBox",
+      "contact_name": null,
+      "contact_email": "pr@brewbox.co",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-09; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D9",
+    "brand": "AuralBuds",
+    "email_ids": [
+      "E-10"
+    ],
+    "latest_email_id": "E-10",
+    "superseded_ids": [],
+    "category": "deal_offer",
+    "next_step": "negotiate",
+    "language": "english",
+    "fee_inr": 67200.0,
+    "rate_card_inr": 40000.0,
+    "fee_display": "Rs 67,200",
+    "deliverables": [
+      {
+        "platform": "instagram",
+        "kind": "reel",
+        "count": 1
+      }
+    ],
+    "deadline": "2026-11-30",
+    "usage_rights": "perpetual all media + whitelisting",
+    "payment_type": "cash",
+    "gift_value_inr": null,
+    "confidence": 1.0,
+    "flags": [
+      {
+        "code": "above_rate",
+        "severity": "info",
+        "reason": "Offer Rs 67,200 is Rs 27,200 above your rate card (Rs 40,000)."
+      },
+      {
+        "code": "unusual_usage_rights",
+        "severity": "warn",
+        "reason": "Asks for perpetual, all-media or whitelisting-style usage; your rate includes up to 3 months of paid-ad usage. Price extra usage separately."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [
+      "My rate includes up to 3 months of paid-ad usage; longer, perpetual or whitelisting usage is priced separately, so please tell me the usage you need."
+    ],
+    "draft_reply": "Hi AuralBuds,\n\nThanks for reaching out. I'm interested and would like to align on a few terms. My rate includes up to 3 months of paid-ad usage; longer, perpetual or whitelisting usage is priced separately, so please tell me the usage you need.\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-10",
+      "category": "deal_offer",
+      "brand": "AuralBuds",
+      "contact_name": null,
+      "contact_email": "influence@auralbuds.com",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-10; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D10",
+    "brand": null,
+    "email_ids": [
+      "E-13"
+    ],
+    "latest_email_id": "E-13",
+    "superseded_ids": [],
+    "category": "spam",
+    "next_step": "ignore",
+    "language": "english",
+    "fee_inr": null,
+    "rate_card_inr": null,
+    "fee_display": null,
+    "deliverables": [],
+    "deadline": null,
+    "usage_rights": null,
+    "payment_type": null,
+    "gift_value_inr": null,
+    "confidence": 1.0,
+    "flags": [],
+    "term_changes": [],
+    "reply_points": [],
+    "draft_reply": null,
+    "draft_source": null,
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-13",
+      "category": "spam",
+      "brand": null,
+      "contact_name": null,
+      "contact_email": "newsletter@creatorweekly.io",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-13; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D11",
+    "brand": "SnapMeal",
+    "email_ids": [
+      "E-12"
+    ],
+    "latest_email_id": "E-12",
+    "superseded_ids": [],
+    "category": "needs_more_info",
+    "next_step": "ask_for_details",
+    "language": "english",
+    "fee_inr": 45000.0,
+    "rate_card_inr": 40000.0,
+    "fee_display": "Rs 45,000",
+    "deliverables": [
+      {
+        "platform": "instagram",
+        "kind": "reel",
+        "count": 1
+      }
+    ],
+    "deadline": "2026-11-01",
+    "usage_rights": null,
+    "payment_type": "cash",
+    "gift_value_inr": null,
+    "confidence": 0.95,
+    "flags": [
+      {
+        "code": "deadline_passed",
+        "severity": "block",
+        "reason": "Deadline 2026-11-01 is before today (2026-11-12). Typo or old email?"
+      },
+      {
+        "code": "above_rate",
+        "severity": "info",
+        "reason": "Offer Rs 45,000 is Rs 5,000 above your rate card (Rs 40,000)."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [
+      "The deadline you mentioned (2026-11-01) has already passed. Is that a typo, or has it been extended?",
+      "Could you share the usage rights you need?"
+    ],
+    "draft_reply": "Hi SnapMeal,\n\nThanks for reaching out. The deadline you mentioned (2026-11-01) has already passed. Is that a typo, or has it been extended? Could you share the usage rights you need?\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-12",
+      "category": "needs_more_info",
+      "brand": "SnapMeal",
+      "contact_name": null,
+      "contact_email": "marketing@snapmeal.in",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-12; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D12",
+    "brand": null,
+    "email_ids": [
+      "E-14"
+    ],
+    "latest_email_id": "E-14",
+    "superseded_ids": [],
+    "category": "scam_or_phishing",
+    "next_step": "report",
+    "language": "english",
+    "fee_inr": null,
+    "rate_card_inr": null,
+    "fee_display": null,
+    "deliverables": [],
+    "deadline": null,
+    "usage_rights": null,
+    "payment_type": null,
+    "gift_value_inr": null,
+    "confidence": 1.0,
+    "flags": [
+      {
+        "code": "suspicious_link",
+        "severity": "block",
+        "reason": "Sender domain 'youtube-copyright-centre.net' imitates Youtube but is not youtube.com."
+      },
+      {
+        "code": "urgency_pressure",
+        "severity": "warn",
+        "reason": "Uses artificial time pressure to rush you."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [],
+    "draft_reply": null,
+    "draft_source": null,
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-14",
+      "category": "scam_or_phishing",
+      "brand": null,
+      "contact_name": null,
+      "contact_email": "support@youtube-copyright-centre.net",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-14; the latest value of each field wins."
+    }
+  },
+  {
+    "deal_id": "D13",
+    "brand": "FitNest",
+    "email_ids": [
+      "E-15"
+    ],
+    "latest_email_id": "E-15",
+    "superseded_ids": [],
+    "category": "needs_more_info",
+    "next_step": "ask_for_details",
+    "language": "english",
+    "fee_inr": null,
+    "rate_card_inr": null,
+    "fee_display": null,
+    "deliverables": [],
+    "deadline": null,
+    "usage_rights": null,
+    "payment_type": null,
+    "gift_value_inr": null,
+    "confidence": 0.9,
+    "flags": [
+      {
+        "code": "missing_attachment",
+        "severity": "warn",
+        "reason": "Mentions an attachment, but none came through."
+      },
+      {
+        "code": "missing_details",
+        "severity": "warn",
+        "reason": "Missing: deliverables, compensation, timeline."
+      }
+    ],
+    "term_changes": [],
+    "reply_points": [
+      "Could you share the deliverables you need (platform and number of posts), your budget, the timeline or go-live date and the usage rights you need?",
+      "The brief doesn't seem to have come through. Could you resend it?"
+    ],
+    "draft_reply": "Hi FitNest,\n\nThanks for reaching out. Could you share the deliverables you need (platform and number of posts), your budget, the timeline or go-live date and the usage rights you need? The brief doesn't seem to have come through. Could you resend it?\n\nBest,\nRiya",
+    "draft_source": "template",
+    "draft_problems": [],
+    "latest_analysis": {
+      "email_id": "E-15",
+      "category": "needs_more_info",
+      "brand": "FitNest",
+      "contact_name": null,
+      "contact_email": "collabs@fitnest.in",
+      "on_behalf_of": null,
+      "reasoning": "Merged terms from E-15; the latest value of each field wins."
+    }
+  }
+]

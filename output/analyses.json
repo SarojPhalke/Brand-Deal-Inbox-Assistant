@@ -373,7 +373,7 @@
     "asks_for_personal_info": true,
     "contains_ai_instructions": false,
     "mentions_attachment": false,
-    "reasoning": "The email uses urgency and threats of account suspension to direct the user to a suspicious, non-YouTube domain for verification, which is a classic phishing tactic."
+    "reasoning": "The email uses a fake domain to impersonate YouTube and threatens account suspension to phish for credentials."
   },
   {
     "email_id": "E-15",
