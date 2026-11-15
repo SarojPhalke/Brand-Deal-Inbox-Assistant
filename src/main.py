@@ -17,6 +17,7 @@ Run from the project root:
 import json
 import sys
 from pathlib import Path
+import time
 
 from src.group import Member, group_deals, load_or_extract
 from src.reply import make_gemini_llm, recommend
@@ -83,9 +84,10 @@ def _deal_to_dict(group, rec) -> dict:
 
 
 def main() -> None:
+    sys.stdout.reconfigure(encoding="utf-8")
     refresh = "--refresh" in sys.argv
     use_llm = "--llm" in sys.argv
-
+    
     # ── 1. Load reference data ────────────────────────────────────────────────
     print("[main] Loading inbox and creator profile…")
     inbox_list: list = _load_json(DATA / "inbox.json")

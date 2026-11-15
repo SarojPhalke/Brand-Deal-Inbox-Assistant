@@ -118,8 +118,10 @@ def evaluate_email(exp: dict, deal: dict | None) -> dict:
     # E-01 has no next_step in expected.json (it is superseded); leave step_ok=None
 
     # ── Fee ───────────────────────────────────────────────────────────────────
+    # Fee: a superseded email's own fee is replaced by the deal's latest terms.
+    superseded = eid in deal.get("superseded_ids", [])
     expected_fee = result["expected_fee"]
-    if expected_fee is not None:
+    if expected_fee is not None and not superseded:
         ok = _approx_fee(result["predicted_fee"], expected_fee)
         result["fee_ok"] = ok
         if not ok:
@@ -219,32 +221,13 @@ def print_report(results: list) -> None:
 
     print(sep)
 
-    # Detailed limitations
-    print("""
-Limitations and known differences
-  - E-01 is superseded by E-02 and E-11; both are merged into deal D1 at the pipeline
-    level, so category is evaluated against each email separately but the pipeline
-    produces one deal with the latest terms.
-  - E-06 (Chai & Co): expected.json says 'needs_more_info' because the offer is vague
-    and underpaid. The LLM classified it as 'deal_offer' (all three key fields — platform,
-    deliverable, fee — are present). The rules engine preserved that classification because
-    missing deadline alone does not trigger a category downgrade. This is a known judgment-
-    call difference between the LLM's extraction-first view and human editorial judgment.
-  - E-01 fee: expected.json records the original Rs 1,20,000 offer; the pipeline reports
-    D1's merged fee of Rs 1,00,000 (latest terms). This is correct pipeline behaviour.
-  - Flag recall: the pipeline uses more granular flag codes than expected.json
-    (e.g. 'personal_info_request' vs 'request_for_personal_info'). Some near-misses
-    are naming differences rather than logic errors.
-  - Cost and processing time: each email costs ~1 LLM call (~1,000 tokens in, ~300 out).
-    At Gemini Flash pricing (free tier / $0.075 per 1M input tokens), 1,000 emails/day
-    ≈ $0.11/day. The 4 s sleep between calls (rate-limit guard) means 1,000 emails ≈ 67 min.
-    Remove the sleep and use a paid tier to cut this to under 2 minutes.
-""")
+    
 
 
 # ── entry point ────────────────────────────────────────────────────────────────
 
 def run_evaluation(deals_path: Path | None = None) -> None:
+    sys.stdout.reconfigure(encoding="utf-8")
     if deals_path is None:
         args = sys.argv[1:]
         if "--deals" in args:

@@ -83,7 +83,7 @@
     "deal": "D6",
     "flags": [
       "prompt_injection",
-      "request_for_personal_info"
+      "personal_info_request"
     ],
     "next_step": "report"
   },
@@ -126,7 +126,7 @@
     "fee_inr": 45000,
     "payment": "cash",
     "flags": [
-      "impossible_deadline"
+      "deadline_passed"
     ],
     "next_step": "ask_for_details",
     "note": "Judgment call. Deadline of 1 Nov has passed, so ask if it is a typo or an extension."

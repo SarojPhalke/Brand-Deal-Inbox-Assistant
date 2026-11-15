@@ -83,44 +83,6 @@ def _category_emoji(cat: str) -> str:
 
 # ── section builders ──────────────────────────────────────────────────────────
 
-def _deal_section(group, inbox: dict) -> str:
-    a, m = group.assessment, group.merged
-    brand = m.brand or "Unknown Brand"
-    latest_body = inbox.get(group.latest_email_id, {}).get("body", "")
-
-    lines = [
-        f"### {group.deal_id} · {_category_emoji(a.category)} {brand}",
-        "",
-        f"**Category:** `{a.category}` · **Next step:** {_next_step_label(group.assessment.flags and group.assessment.flags[0].code or '')}",  # will be overridden
-    ]
-    # Rewrite the "Next step" line properly (we need the recommendation object)
-    lines[2] = f"**Category:** `{a.category}`"
-
-    # Money and scope
-    money = _money_line(group)
-    delivs = _deliverables_line(m)
-    deadline = _deadline_line(m)
-    scope_parts = [money, delivs]
-    if deadline:
-        scope_parts.append(deadline)
-    lines.append(" · ".join(p for p in scope_parts if p))
-
-    # Thread info
-    if len(group.email_ids) > 1:
-        lines.append(f"*Thread: {', '.join(group.email_ids)} ({len(group.email_ids)} emails)*")
-
-    # Flags
-    flag_text = _flag_block(a.flags)
-    if flag_text:
-        lines.append("")
-        lines.append(flag_text)
-
-    # Changes in terms
-    for c in group.changes:
-        lines.append(f"  - 📝 {c}")
-
-    lines.append("")
-    return "\n".join(lines)
 
 
 def _deal_section_with_rec(group, rec, inbox: dict) -> str:
@@ -228,7 +190,7 @@ def build_summary(groups: list, recommendations: list, profile: dict, inbox: dic
     ]
 
     # Quick stats bar
-    total_deals = sum(1 for g, _ in urgent + action_needed if g.assessment.category == "deal_offer")
+    #total_deals = sum(1 for g, _ in urgent + action_needed if g.assessment.category == "deal_offer")
     potential_inr = sum(
         (g.assessment.fee_inr or 0)
         for g, _ in urgent + action_needed
@@ -239,7 +201,7 @@ def build_summary(groups: list, recommendations: list, profile: dict, inbox: dic
         "",
         f"| | |",
         f"|---|---|",
-        f"| Total emails processed | **15** |",
+        f"| Total emails processed | **{sum(len(g.email_ids) for g in groups)}** |",
         f"| Active deals | **{len(urgent) + len(action_needed)}** |",
         f"| Needs your reply | **{len(urgent) + len(action_needed)}** |",
         f"| Not a fit | **{len([x for x in fyi if x[0].assessment.category == 'not_a_fit'])}** |",
