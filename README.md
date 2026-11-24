@@ -2,7 +2,7 @@
 
 A command-line tool that reads a creator's brand-deal inbox and tells them **what each email is, what the deal actually says, what's risky, and what to do next**, with draft replies ready to review. Nothing is ever sent.
 
-Built for the JEEVIT Founding AI Engineer take-home (see `TASK.md`).
+
 
 The design in one line: **the LLM extracts, plain code judges.**
 
